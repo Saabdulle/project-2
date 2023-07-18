@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/forum.css">
+    <script src="../JS/forum.js" defer></script>
+    <title>Forum | Florin Council</title>
+</head>
+<body>
+    <div id="navbar">
+         <!-- Navbar start -->
+    <ul class="horizontal gray">
+
+        
+        <li><a onclick="removeTokenFromLocalStorage()">Log Out</a></li>
+        <li><button onclick="donationPage()" id="donate-button">Donate</button></li>
+        <li><a href="../HTML/Signup.html">Sign up</a></li>
+        <li><a href="../HTML/signin.html">Log in</a></li>
+        <li><a href="../HTML/about.html">About</a></li>
+        <li><a onclick="scrollToVolunteer()">Volunteer</a></li>
+        <li><a href="../HTML/contact.html">Contact</a></li>
+        <!-- <li><a href="../HTML/posts.html">Posts</a></li> -->
+        <li><a href="../HTML/forum.html">Forum</a></li>
+        <li><a href="../HTML/welcome.html">Home</a></li>
+        <button id="swap-btn" onclick="changeTheme()"><img  src="../assets/halfmoonhalfsun.png" alt="Half sun and half moon icon"></button>
+        <li><a href="../HTML/welcome.html" id="navbar-icon">Civic Coders</a></li>
+        <!-- <li><button id="logout">logout</button></li> -->
+    </ul>
+    <!-- Navbar end  -->
+    </div>
+
+    <div id="forum-container">
+    
+    <h1>Volunteer Forum</h1>
+    <section id="threads">
+        
+    </section>
+    
+    <h2>Create a new thread</h2>
+    <form id="create-thread">
+        <input type="text" name="title" placeholder="Enter thread title" required><br>
+        <textarea name="body" placeholder="Enter thread body" required></textarea><br>
+        <input type="submit" value="Create thread">
+    </form>
+    
+    </div>
+
+    
+</body>
+</html>
