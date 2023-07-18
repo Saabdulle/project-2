@@ -1,6 +1,6 @@
 const { message } = require("statuses");
 const Post = require("../models/post.js");
-const User = require("../models/user");
+const User = require("../models/user.js");
 
 async function index(req, res) {
     

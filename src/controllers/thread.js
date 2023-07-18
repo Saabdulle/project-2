@@ -1,5 +1,5 @@
 const Thread = require("../models/thread.js");
-const User = require("../models/user");
+const User = require("../models/user.js");
 async function index(req, res) {
     try {
         const thread = await Thread.getAll();
