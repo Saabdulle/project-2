@@ -1,4 +1,4 @@
-{
+{"name": "florin-council", 
   "dependencies": {
     "bcrypt": "^5.1.0",
     "cors": "^2.8.5",
@@ -22,15 +22,7 @@
     "start": "node ./server/index.js",
     "dev": "nodemon -L ./server/index.js",
     "test": "jest --coverage --verbose",
-    "deploy": "cd server && npm run setup-db && npm run dev",
-    "build": "npm run build:client",
-    "build:client": "npm run build:html && npm run build:css && npm run build:js",
-    "build:html": "cp -r public/html public",
-    "build:css": "cp -r public/css public",
-    "build:js": "cp -r public/js public"
-  },
-  "engines": {
-    "node": ">=14.0.0"
+    "deploy": "cd server && npm run setup-db && npm run dev"
   },
   "jest": {
     "testEnvironment": "jsdom"
