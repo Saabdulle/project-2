@@ -18,11 +18,11 @@
     "jsdom": "^21.1.0"
   },
   "scripts": {
-    "setup-db": "node ./server/database/setup.js",
-    "start": "node ./server/index.js",
-    "dev": "nodemon -L ./server/index.js",
+    "setup-db": "node ./src/database/setup.js",
+    "start": "node ./src/index.js",
+    "dev": "nodemon -L ./src/index.js",
     "test": "jest --coverage --verbose",
-    "deploy": "cd server && npm run setup-db && npm run dev"
+    "deploy": "cd src && npm run setup-db && npm run dev"
   },
   "jest": {
     "testEnvironment": "jsdom"
